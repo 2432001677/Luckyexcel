@@ -20,7 +20,7 @@ export class LuckySheetBase implements IluckySheet{
     scrollLeft:number
     scrollTop:number
     zoomRatio:number
-    showGridLines:string
+    showGridLines:number
     defaultColWidth:number
     defaultRowHeight:number
 

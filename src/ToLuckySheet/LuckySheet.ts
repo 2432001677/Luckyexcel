@@ -46,10 +46,10 @@ export class LuckySheet extends LuckySheetBase {
         this.mergeCells = this.readXml.getElementsByTagName("mergeCells/mergeCell", this.sheetFile);
         let clrScheme = this.styles["clrScheme"] as Element[];
         let sheetView = this.readXml.getElementsByTagName("sheetViews/sheetView", this.sheetFile);
-        let showGridLines = "1", tabSelected="0", zoomScale = "100", activeCell = "A1";
+        let showGridLines = 1, tabSelected="0", zoomScale = "100", activeCell = "A1";
         if(sheetView.length>0){
             let attrList = sheetView[0].attributeList;
-            showGridLines = getXmlAttibute(attrList, "showGridLines", "1");
+            showGridLines = parseInt(getXmlAttibute(attrList, "showGridLines", "1"));
             tabSelected = getXmlAttibute(attrList, "tabSelected", "0");
             zoomScale = getXmlAttibute(attrList, "zoomScale", "100");
             // let colorId = getXmlAttibute(attrList, "colorId", "0");

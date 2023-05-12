@@ -41,7 +41,7 @@ export interface IluckySheet{
     
     zoomRatio:number, //sheet zoom ratio 10%-400%
 
-    showGridLines:string, // show grid lines
+    showGridLines:number, // show grid lines
 
     defaultColWidth:number, //cloumn width pixel
     defaultRowHeight:number, //row height pixel
